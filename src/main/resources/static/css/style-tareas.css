@@ -1,0 +1,200 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #F5EBE0;
+}
+
+.header,
+header {
+    background-color: #EBE1D6;
+}
+
+#logo {
+    padding: 20px 20px 0px 20px;
+    display: block;
+    margin: auto;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    font-family: Montserrat;
+    padding: 8px;
+    padding-left: 16px;
+    font-size: 25px;
+    border: none;
+    background: #D6CCC2;
+    border-radius: 13px;
+    width: 693px;
+}
+
+input:focus{
+    border: solid 1px #BFAF9F;
+}
+
+
+ button:hover {
+    color: rgb(0, 0, 0);
+    background: #BFAF9F;
+}
+
+.todo-button{
+    font-family: Montserrat;
+    cursor: pointer;
+    padding: 16px;
+    font-size: 15px;
+    border: none;
+    background: #BFAF9F;
+    border-radius: 15px;
+    margin-left: 15px
+}
+
+#enviar{
+    margin: 0px;
+    padding-bottom: 10px ;
+}
+
+.pdf{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.fa-plus-circle {
+    margin-top: 4.8px;
+    margin-left: -8px;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 62%;
+    list-style: none;
+    margin-left: 0px;
+    width: 710px;
+}
+
+.todo {
+    font-family: Montserrat;
+    margin: 8px;
+    padding-left: 8px;
+    background: #D6CCC2;
+    color: black;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 13px;
+    margin-right: 17%;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+    color: white;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.complete-btn {
+    background: rgba(255, 200, 0, 0);
+}
+
+.complete-btn:hover {
+    background: #BFAF9F;
+}
+
+.trash-btn {
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    background: rgba(171, 171, 171, 0);
+}
+
+.trash-btn:hover {
+    background: #BFAF9F;
+}
+
+.todo-item {
+    padding: 0px 8px;
+}
+
+.fa-trash,
+.fa-check-circle {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.slide {
+    transform: translateX(160px);
+    opacity: 0;
+}
+
+select {
+    font-family: Montserrat;
+    background-color: #D6CCC2;
+    color: #000000;
+    width: 160px;
+    height: 55px;
+    cursor: pointer;
+    padding: 16px;
+    border: none;
+    margin: 16px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+
+.col-select {
+    background-color: #EBE1D6;
+    height: auto;
+}
+
+.col-filtros {
+    background-color: #EBE1D6;
+    height: auto;
+    min-height: 87vh;
+}
+
+.col-toDo {
+    padding: 0px;
+}
+
+.titulo-lista {
+    font-family: Montserrat;
+
+    margin-top: 53px;
+    margin-left: 40px;
+}
+
+.titulo {
+    font-family: Montserrat;
+    text-align: center;
+    padding: 30px 0px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style-comun.css}">
+
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style-invitados.css}">
+    <link rel="icon" type="image/x-icon" th:href="@{/img/logo.svg/}">
+
+
+    <title>Lista de invitados</title>
+
+    <style></style>
+</head>
+
+
+<body>
+    <header>
+        <img id="logo" th:src=@{/img/AMORE.SVG} alt="">
+    </header>
+    <nav th:replace="fragmentos.html::indice"></nav>
+
+    <h1>Lista de invitado</h1>
+
+    <div class="seccion-superior">
+        <div class="boton-invitado"> <button class="boton"><img th:src=@{/img/plus-circle.svg} class="img-boton"><a href="/invitados/new"
+                    class="boton-text">Nuevo Invitado</a></button>
+            <button class="boton"><img th:src=@{/img/plus-circle.svg} class="img-boton"><a href="/categoria/"
+                    class="boton-text">Categorias</a></button>
+        </div>
+
+        <div> <select id="select" class="single-select select-categoria" onChange="changeCategory();">
+                <option hidden value=""><span th:text="${categoriaSeleccionada}">default</span></option>
+                <option value="">Todas</option>
+                <option th:each="categoria : ${listaCategorias}" th:value="${categoria.id}"
+                    th:text="${categoria.nombre}">
+                </option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="seccion tabla-container">
+        <table class="tabla-invitados">
+            <thead>
+                <tr>
+                    <th >Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Email</th>
+                    <th>Dirección</th>
+                    <th>Categoría</th>
+                    <th>Editar</th>
+                    <th>Borrar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="invitado : ${listaInvitados}">
+                    <td th:text="${invitado.nombre}" class="nombre">Nombre</td>
+                    <td th:text="${invitado.telefono}" class="telefono">Teléfono</td>
+                    <td th:text="${invitado.email}" class="email">Email</td>
+                    <td th:text="${invitado.direccion}" class="direccion">Dirección</td>
+                    <td th:text="${invitado.categoria.nombre}" class="categoria">Categoría</td>
+                    <td class="editar">
+                        <a th:href="@{/invitados/edit/{id}(id=${invitado.id})}" class="editar"><img th:src=@{/img/edit.svg}></a>
+                    </td>
+                    <td class="borrar">
+                        <a th:href="@{/invitados/delete/{id}(id=${invitado.id})}" class="borrar"><img th:src=@{/img/trash.svg}></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer th:replace="fragmentos.html::footer"></footer>
+
+
+
+
+
+    <script type="text/javascript">
+        function changeCategory() {
+            window.location.href = "/invitados/list/" +
+                document.getElementById("select").value;
+        }
+
+
+    </script>
+</body>
+
+</html>

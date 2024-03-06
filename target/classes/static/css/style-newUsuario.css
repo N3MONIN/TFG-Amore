@@ -1,0 +1,99 @@
+body {
+    height: 100vh;
+    background-color: #F2E8DC !important;
+}
+
+header {
+    background-color: #E8DED3;
+}
+
+#logo {
+    padding: 25px 0px;
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: auto;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.titulo-login {
+    padding-top: 10px;
+    font-family: Mountainous;
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: 0em;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 0px 0px;
+}
+
+.formulario {
+    border-radius: 16px;
+    background-color: #E8DED3;
+    border: solid 1px #E8DED3;
+}
+
+.img {
+    width: 113%;
+    border-radius: 16px 0px 0px 16px;
+}
+
+.input-formulario {
+    background-color: #F2E8DC;
+}
+
+.boton-inicio {
+    background-color: #DCCCBF;
+    width: 50%;
+    padding: 10px;
+    border: solid 0px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.boton-inicio:hover {
+    background-color: #F2E8DC;
+}
+
+.label-formulario {
+    background-color: #DCCCBF;
+    display: block;
+    width: 100%;
+    border: solid 0px;
+}
+
+.div-crear-cuenta {
+    text-align: center;
+}
+
+
+.subs,
+.text {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+.formulario-int {
+    padding: 0px 60px 20px 60px;
+    width: 100%;
+}
+
+.rol {
+    display: none;
+}

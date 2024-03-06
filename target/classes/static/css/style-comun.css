@@ -1,0 +1,49 @@
+.header,
+header {
+  background-color: #EBE1D6;
+}
+
+#logo {
+  padding: 20px 20px 0px 20px;
+  display: block;
+  margin: auto;
+}
+
+.menu,
+.log-out {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-family: Montserrat;
+  font-weight: 400;
+
+}
+
+
+.menu:hover,
+.log-out:hover {
+  color: #707070;
+  background-color: transparent;
+}
+
+body {
+  background-color: #F5EBE0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  background-color: #EBE1D6;
+  margin-top: auto;
+
+}
+
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+

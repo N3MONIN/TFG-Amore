@@ -1,0 +1,67 @@
+h1 {
+    font-family: Montserrat;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.formulario {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #D6CCC2;
+    border: 1px solid #c2b8ae;
+    border-radius: 10px;
+    font-family: Montserrat;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.formulario label {
+    display: block;
+    font-weight: 600;
+    color: #000000;
+}
+
+.formulario select,
+.formulario input[type="text"],
+.formulario input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 5px;
+    border: 1px solid #b19d8c;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #EDEDE9;
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #9e8771;
+    border: none;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #8a6652;
+}
+
+.formulario a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.formulario a:hover {
+    color: #3a3a3a;
+}

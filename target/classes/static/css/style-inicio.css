@@ -1,0 +1,103 @@
+.carrousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img-carrusel {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0px;
+
+}
+
+.slogan {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 70px
+}
+
+.flecha-alante {
+    margin-right: 5%;
+}
+
+.flecha-atras {
+    margin-left: 5%;
+}
+
+.card-body {
+    background-color: #D6CCC2;
+}
+
+h5 {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+p {
+    font-family: Montserrat;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+
+
+}
+
+h2 {
+    font-family: Montserrat;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+
+
+}
+
+h1 {
+    text-align: center;
+    font-family: Mountainous;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: 0em;
+    padding-top: 30px;
+    color: black;
+
+}
+
+.btn-interes {
+    font-family: Montserrat;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.btn-interes:hover{
+color: black;
+}
+
+
+.boton:hover{
+    background-color: #BFAF9F;
+ 
+}
+.boton {
+    background-color: #94877a;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.enlaces-interes {
+    padding: 80px 0px;
+}

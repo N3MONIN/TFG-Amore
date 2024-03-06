@@ -1,0 +1,140 @@
+.tabla-invitados {
+    margin: 0px 5% 0px 5%;
+    width: 90%;
+    border-collapse: collapse;
+    border: 4px solid #BFAF9F;
+}
+
+thead {
+    background-color: #D6CCC2;
+}
+
+.tabla-invitados th,
+.tabla-invitados td {
+    padding: 8px;
+    border: 2px solid #BFAF9F;
+    text-align: center;
+}
+
+h1 {
+    font-family: Montserrat;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer-galeria {
+    margin-top: 80px;
+  }
+
+th {
+    font-family: Montserrat;
+    font-size: 18px;
+    text-decoration: none;
+    color: #767575;
+    font-weight: 600;
+}
+
+td {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #53504c;
+}
+
+.tabla-invitados .editar,
+.tabla-invitados .borrar {
+    width: 60px;
+    text-align: center;
+}
+
+.tabla-invitados .nombre,
+.tabla-invitados .telefono,
+.tabla-invitados .categoria {
+    width: 100px;
+}
+
+.tabla-invitados .email,
+.tabla-invitados .direccion {
+    width: 200px;
+}
+
+.seccion-superior {
+    margin: 50px 5% 35px 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    background-color: #D6CCC2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #BFAF9F;
+}
+
+.img-boton {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.boton-text {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+.boton-text:hover {
+    color: black;
+
+}
+
+.boton-invitado {
+    display: flex;
+}
+
+.single-select {
+    border: 0px solid #BFAF9F;
+    border-radius: 12px;
+    background-color: #D6CCC2;
+    color: black;
+    font-family: Montserrat;
+    padding: 10px 20px;
+
+}
+
+.select-categoria {
+    margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+
+    .tabla-invitados .editar,
+    .tabla-invitados .borrar {
+        width: 40px;
+    }
+}

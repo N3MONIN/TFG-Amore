@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Inicio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style-inicio.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style-comun.css}">
+    <link rel="icon" type="image/x-icon" th:href="@{/img/logo.svg/}">
+
+    
+</head>
+
+<body id="body">
+
+    <header>
+        <img id="logo" th:src=@{/img/AMORE.SVG} alt="">
+    </header>
+    <nav th:replace="fragmentos.html::indice"></nav>
+
+    <div class="wrapper">
+        <h1>CONVIERTE TU BODA EN UN CUENTO DE HADAS</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img th:src=@{/img/imgSlider4.png} alt="" class="img-carrusel">
+                </div>
+                <div class="carousel-item">
+                    <img th:src=@{/img/imgSlider1.png} alt="" class="img-carrusel">
+                </div>
+                <div class="carousel-item">
+                    <img th:src=@{/img/imgSlider2.png} alt="" class="img-carrusel">
+                </div>
+                <div class="carousel-item">
+                    <img th:src=@{/img/imgSlider3.png} alt="" class="img-carrusel">
+                </div>
+                <div class="carousel-item">
+                    <img th:src=@{/img/imgSlider5.png} alt="" class="img-carrusel">
+                </div>
+            </div>
+            <button class="carousel-control-prev flecha-atras" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="flechita" aria-hidden="true"><img th:src=@{/img/chevron-left.svg} alt=""></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next flecha-alante" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="flechita" aria-hidden="true"><img th:src=@{/img/chevron-right.svg} alt=""></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 enlaces-interes">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4 text-center titulo-enlaces">Enlaces de interes</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <div class="col">
+                        <div class="card">
+
+                            <img th:src=@{/img/tarta.png} class="card-img-top" alt="DAMN.">
+
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="play-icon"></span>
+                                    Tartas de Boda
+                                </h5>
+                                <p class="card-text">Encuentra las tartas de bodas más deliciosas y bonitas un festín
+                                    inolvidable.</p>
+
+                                <div class="action-buttons">
+                                    <button class="btn btn- boton"><a class="btn-interes"
+                                            href="https://www.bodas.net/articulos/como-elegir-la-tarta-ideal-para-tu-boda--c2502"
+                                            target="_blank">Más sobre tartas</a></button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img th:src=@{/img/flores.png} class="card-img-top" alt="DAMN.">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="play-icon"></span>
+                                    Ramos de novia
+                                </h5>
+                                <p class="card-text">Elige tu ramo de flores perfecto para lucir radiante en tu día
+                                    especial.</p>
+                                <div class="action-buttons">
+                                    <button class="btn btn- boton"><a class="btn-interes"
+                                            href="https://aurofloral.com/pages/ramos-novia" target="_blank">Más sobre
+                                            ramos</a></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="card">
+                            <img th:src=@{/img/vestido.png} class="card-img-top" alt="DAMN.">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="play-icon"></span>
+                                    Vestidos de novia
+                                </h5>
+                                <p class="card-text">Descubre el vestido de novia perfecto para deslumbrar en tu día
+                                    especial.</p>
+                                <div class="action-buttons">
+                                    <button class="btn btn- boton"><a class="btn-interes"
+                                            href="https://www.pronovias.com/" target="_blank">Más
+                                            sobre vestidos</a></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img th:src=@{/img/traje.jpg} class="card-img-top" alt="DAMN.">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="play-icon"></span>
+                                    Trajes para Novio
+                                </h5>
+                                <p class="card-text">Descubre estilos excepcionales de trajes de novio para lucir
+                                    impecable en tu boda.</p>
+                                <div class="action-buttons">
+                                    <button class="btn btn- boton"><a class="btn-interes"
+                                            href="https://www.pronovias.com/" target="_blank">Más
+                                            sobre trajes</a></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img th:src=@{/img/anillos.jpg} class="card-img-top" alt="DAMN.">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="play-icon"></span>
+                                    Anillos de boda
+                                </h5>
+                                <p class="card-text">Descubre los anillos de boda que capturarán la esencia de tu amor y
+                                    sellarán tu amor.</p>
+                                <div class="action-buttons">
+                                    <button class="btn btn- boton"><a class="btn-interes" href="https://www.faire.com/"
+                                            target="_blank">Más sobre
+                                            anillos</a></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img th:src=@{/img/lunaMiel.jpg} class="card-img-top" alt="DAMN.">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="play-icon"></span>
+                                    Luna de miel
+                                </h5>
+                                <p class="card-text">Descubre destinos de ensueño para tu luna de miel perfecta.</p>
+                                <div class="action-buttons">
+                                    <button class="btn btn- boton"><a class="btn-interes"
+                                            href="https://www.elle.com/es/living/viajes/a28330157/viajes-luna-de-miel-destinos-diferentes/"
+                                            target="_blank">Más sobre destinos</a></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="card">
+                            <img th:src=@{/img/catering.jpg} class="card-img-top" alt="DAMN.">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="play-icon"></span>
+                                    Catering
+                                </h5>
+                                <p class="card-text">Sabores exquisitos para una experiencia culinaria inolvidable en tu
+                                    boda.</p>
+                                <div class="action-buttons">
+                                    <button class="btn btn- boton"><a class="btn-interes"
+                                            href="https://www.zankyou.es/p/aprende-a-organizar-el-banquete-de-boda-paso-por-paso"
+                                            target="_blank">Más sobre catering</a></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img th:src=@{/img/ceremonia.jpg} class="card-img-top" alt="DAMN.">
+
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="play-icon"></span>
+                                    Ceremonia
+                                </h5>
+                                <p class="card-text">Descubre ideas y consejos para hacer de tu ceremonia de boda un
+                                    momento mágico.</p>
+                                <div class="action-buttons">
+                                    <button class="btn btn- boton"><a class="btn-interes"
+                                            href="https://www.diariodeunanovia.es/como-organizar-una-boda-paso-paso/"
+                                            target="_blank">Más sobre ceremonias</a></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img th:src=@{/img/detalle.jpg} class="card-img-top" alt="DAMN.">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="play-icon"></span>
+                                    Detalles para invitados
+                                </h5>
+                                <p class="card-text">Encuentra ideas para regalos para agreder su presencia en tu día
+                                    especial.</p>
+                                <div class="action-buttons">
+                                    <button class="btn btn- boton"><a class="btn-interes"
+                                            href="https://sincla.com/blogs/news/ideas-para-elegir-los-detalles-de-boda?msclkid=c91c9aa2f5c01b327946fe275bcd5f27"
+                                            target="_blank">Más sobre detalles</a></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <footer th:replace="fragmentos.html::footer"></footer>
+
+
+</body>
+
+</html>
